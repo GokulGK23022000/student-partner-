@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Cabin&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display&family=Inconsolata:wght@600&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital@1&family=Mukta:wght@500&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@1,400;1,500&family=Source+Code+Pro:ital@1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: hsl(180, 20%, 99%);
+  --second-color: hsl(240, 12%, 97%);
+  --Accent-color: hsl(196, 99%, 33%);
+  --card-bg-color: hsl(243, 75%, 95%);
+  --button-bg-color: hsl(245, 34%, 39%);
+  --border-color: hsl(200, 100%, 98%);
+  --font-color: hsl(0, 0%, 100%);
+
+  /* --Heading: "Protest Riot", sans-serif; */
+  --MainHeading: "Poppins", sans-serif;
+  --SubHeading: "Roboto", sans-serif;
+
+  --MainHeading-size: 45px;
+  --SubHeading-size: 23px;
+  --para-size: 20px;
+}
+
+body {
+  font-family: var(--MainHeading)!important;
+}
+.navbar {
+  font-family: var(--MainHeading)!important ;
+  background-color: var(--primary-color);
+}
+.navbar-brand {
+  font-family: var(--brand-font);
+  font-size: var(--SubHeading-size);
+}
+.navbar-nav li a {
+  font-family: var(--SubHeading);
+  padding: 8px;
+  color: black;
+}
+
+.HeroContainer {
+  background-color: var(--second-color);
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(25, 111, 241, 0.137);
+  border: 1px solid var(--border-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:9%;
+}
+.HeroContent {
+  margin-top: 70px;
+  margin-left: 35px;
+}
+.HeroContent h6 {
+  font-family: var(--MainHeading);
+  font-size: small;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.HeroContent h3 {
+  font-family: var(--MainHeading);
+  font-weight: 800;
+  margin-top: 20px;
+  line-height: 45px;
+}
+.HeroContent span {
+  color: var(--Accent-color);
+}
+.HeroImg {
+  width: 60%;
+  overflow: hidden;
+}
+.HeroImg img {
+  width: 100%;
+  height: 100%;
+}
+.CardSection .container .row {
+  margin-top: 60px;
+}
+.CardContainer {
+  background-color: var(--second-color);
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.CardView {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+.CardHeading {
+  font-family: var(--SubHeading);
+  font-size: var(--SubHeading-size);
+  color: var(--Accent-color);
+  font-weight: 600;
+}
+.CardView p {
+  padding-top: 20px;
+  font-size: medium;
+}
+.header{
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  font-weight: 700;
+}
+.StudentRoles .container .row {
+  margin-top: 40px
+}
+.StudentRolescontainer .StudentRolesHeading {
+  font-family: var(--SubHeading);
+  font-size: var(--SubHeading-size);
+  font-weight: 600;
+}
+.StudentRolescontainer .StudentRolesSubHeading {
+  margin-top: 10px;
+}
+.StudentRolesTable {
+  border-radius: 10px;
+  border: 2px solid #ebf2ff;
+  padding: 1rem 2rem;
+}
+.StudentRoles ul li {
+  list-style-type: none;
+}
+.StudentRolesContent {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+.StudentRolesIcons {
+  width: 40px;
+  height: 40px;
+}
+.StudentRolesIcons img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.ExperienceStudent-img{
+    width:100%;
+    height: 200px;
+}
+ .ExperienceStudent-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .ExperienceStudent-content h3{
+    font-size: 24px;
+    font-weight: 700
+  }
+  .ExperienceStudent-content p{
+    font-size: 14px;
+    line-height:1.5;
+  }
+  .ExperienceStudent-content{
+    padding: 0 1rem;
+  }
+  .ExperienceStudent:hover{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .ExperienceStudent{
+    gap: 5px;
+  }
+  .students-det{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    font-family: "poppins",sans-serif!important;
+  }
+  .line-cover {
+    position: relative;
+}
+.student-num{
+  width: 30px;
+  height: 30px;
+  background-color: #003ace;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 100vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+} 
+.student-subhead{
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .student-para{
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .prog-line{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75%;
+    left: -80%;
+    height: 1px;
+    background-color: #003ace;
+  }
+  .header-2{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .student-link a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10%;
+    border: #003ace 1px solid;
+    border-radius: 7px;
+    padding: 5px 15px 5px 15px;
+  }
+  .student-link a:Hover{
+          background-color:#0b5ed7;
+          color: #ebf2ff;
+          transition: all 0.5s ease;
+  }
+  
+  
+  
+  
+  
+
+@media screen and (max-width: 1280px) {
+  .HeroContainer {
+    height: 400px;
+  }
+  .HeroImg {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 776px) {
+  .HeroContainer {
+    height: auto;
+    padding-block-end: 20px;
+  }
+  .HeroContent {
+    margin-top: 20px;
+  }
+  .HeroImg {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .HeroContainer {
+    height: auto;
+  }
+  .students-det{
+    grid-template-columns: 1fr;
+}
+  .prog-line{
+    display: none;
+  }
+}
